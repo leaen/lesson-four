@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example Django Form!</title>
+  </head>
+  <body>
+    <form>
+      {{ form.as_p }}
+      <input type="submit" value="Say Hello">
+    </form>
+    <a href="{% url 'html_form' %}">Show me the HTML Form</a>
+  </body>
+</html>
