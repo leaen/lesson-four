@@ -1,6 +1,6 @@
 # MelbDjango School Lesson Four
 
-**Important:** Please take the [survey](https://docs.google.com/a/acommoncreative.com/forms/d/1VKqD1-aVsgztk19kdluNtFyTGiarbV9LgBFi2BwYT-g/viewform?c=0&w=1) if you came to the class today.
+**Important:** Check out our first assignment for you here: https://github.com/melbdjango/melbdjango-assignment
 
 The slides for this lesson are [available online](https://melbdjango.github.io/lesson-four/).
 
