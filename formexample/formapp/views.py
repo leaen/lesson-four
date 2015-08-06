@@ -1,9 +1,5 @@
 from django.shortcuts import render
-from django import forms
-
-
-class HelloWorldForm(forms.Form):
-    name = forms.CharField()
+from .forms import HelloWorldForm
 
 
 def example(request):
@@ -11,7 +7,16 @@ def example(request):
 
 
 def django_example(request):
-    form = HelloWorldForm()
+    if request.method == 'POST':
+        form = HelloWorldForm(request.POST)
+        if form.is_valid():
+            return render(request, 'django_form.html', {
+                'form': form,
+                'name': form.cleaned_data['name']
+            })
+    else:
+        form = HelloWorldForm()
+
     return render(request, 'django_form.html', {
         'form': form,
     })

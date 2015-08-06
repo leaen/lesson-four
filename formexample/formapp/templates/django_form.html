@@ -5,8 +5,13 @@
     <title>Example Django Form!</title>
   </head>
   <body>
-    <form>
+    {% if name %}
+    <h1>Hello {{ name }}</h1>
+    {% endif %}
+
+    <form method="POST">
       {{ form.as_p }}
+      {% csrf_token %}
       <input type="submit" value="Say Hello">
     </form>
     <a href="{% url 'html_form' %}">Show me the HTML Form</a>
