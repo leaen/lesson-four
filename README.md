@@ -17,6 +17,8 @@ Check our RESOURCES.md for some links we think you'll find handy.
 - [ ] Clone the repo to your own machine
 - [ ] Use the virtualenv you created in previous lesson
 
+- [ ] Create forms to create new Projects and Clients
+- [ ] Use `clean()` to ensure that our start time is after our end time
 
 When you've completed some or all of the homework please make a [Pull Request][gh-pr] against this repository. If you submit
 your work before Wednesday evening we'll give you feedback before the next class.
