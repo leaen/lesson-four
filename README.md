@@ -1,11 +1,11 @@
 # MelbDjango School Lesson Four
 
-## Assignment #1
+### Assignment 1
+
 **Important:** Check out our first assignment here: https://github.com/melbdjango/melbdjango-assignment
 
 ---
 
-The slides for this lesson are [available online](https://melbdjango.github.io/lesson-four/).
 
 Congratulations, you've made it to the git repository for our fourth lesson. Hopefully you also made it to the class
 and some of this makes sense to you.
@@ -15,7 +15,6 @@ Check our RESOURCES.md for some links we think you'll find handy.
 
 ## Homework Checklist
 
-- [ ] Read up on regular expressions
 - [ ] [Fork this repository][gh-fork]
 - [ ] Clone the repo to your own machine
 - [ ] Use the virtualenv you created in previous lesson
@@ -41,7 +40,7 @@ Install reveal-md with npm and use that to display the class slides.
     npm install -g reveal-md
 ```
 
-From within the `lesson-three` repo:
+From within the `lesson-four` repo:
 
 ```
     cd slides
