@@ -15,11 +15,11 @@ Check our RESOURCES.md for some links we think you'll find handy.
 
 ## Homework Checklist
 
-- [ ] [Fork this repository][gh-fork]
-- [ ] Clone the repo to your own machine
-- [ ] Use the virtualenv you created in previous lesson
-- [ ] Create forms to create new Projects and Clients (look at our EntryForm to see how to handle ForeignKey relationships)
-- [ ] Add those forms to your views and templates so that users can create new Clients and Projects
+- [X] [Fork this repository][gh-fork]
+- [X] Clone the repo to your own machine
+- [X] Use the virtualenv you created in previous lesson
+- [X] Create forms to create new Projects and Clients (look at our EntryForm to see how to handle ForeignKey relationships)
+- [X] Add those forms to your views and templates so that users can create new Clients and Projects
 - [ ] Add some validation to make sure that start time is in the past
 - [ ] Validate that the end time is after the start time
 - [ ] Bonus Points #1: Think about making our form look a little nice with some CSS
