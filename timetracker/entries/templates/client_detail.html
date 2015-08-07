@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Client projects{% endblock %}
+
+{% block content %}
+  <h2>Client projects</h2>
+
+  <h3>Client</h3>
+  {{ client.name }}
+
+  <h3>Projects</h3>
+  <ul>
+    {% for project in client.project_set.all %}
+    <li>
+      {{ project.name }}
+      <ul>
+        {% for entry in project.entry_set.all %}
+        <li>{{ entry.description }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
