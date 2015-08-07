@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
+from .forms import EntryForm
 from .models import Client, Entry, Project
 
 
@@ -18,9 +19,24 @@ def client_detail(request, pk):
 
 
 def entries(request):
+    if request.method == 'POST':
+        # Create our form object with our POST data
+        entry_form = EntryForm(request.POST)
+        if entry_form.is_valid():
+            # If the form is valid, let's create and Entry with the submitted data
+            entry = Entry()
+            entry.start = entry_form.cleaned_data['start']
+            entry.end = entry_form.cleaned_data['end']
+            entry.project = entry_form.cleaned_data['project']
+            entry.description = entry_form.cleaned_data['description']
+            entry.save()
+    else:
+        entry_form = EntryForm(request.POST)
+
     entry_list = Entry.objects.all()
     return render(request, 'entries.html', {
         'entry_list': entry_list,
+        'entry_form': entry_form,
     })
 
 

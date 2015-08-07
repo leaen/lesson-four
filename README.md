@@ -1,6 +1,9 @@
 # MelbDjango School Lesson Four
 
-**Important:** Check out our first assignment for you here: https://github.com/melbdjango/melbdjango-assignment
+## Assignment #1
+**Important:** Check out our first assignment here: https://github.com/melbdjango/melbdjango-assignment
+
+---
 
 The slides for this lesson are [available online](https://melbdjango.github.io/lesson-four/).
 
@@ -16,9 +19,12 @@ Check our RESOURCES.md for some links we think you'll find handy.
 - [ ] [Fork this repository][gh-fork]
 - [ ] Clone the repo to your own machine
 - [ ] Use the virtualenv you created in previous lesson
-
-- [ ] Create forms to create new Projects and Clients
-- [ ] Use `clean()` to ensure that our start time is after our end time
+- [ ] Create forms to create new Projects and Clients (look at our EntryForm to see how to handle ForeignKey relationships)
+- [ ] Add those forms to your views and templates so that users can create new Clients and Projects
+- [ ] Add some validation to make sure that start time is in the past
+- [ ] Validate that the end time is after the start time
+- [ ] Bonus Points #1: Think about making our form look a little nice with some CSS
+- [ ] Bonus Points #2: Add the ability to edit existing Projects and Clients
 
 When you've completed some or all of the homework please make a [Pull Request][gh-pr] against this repository. If you submit
 your work before Wednesday evening we'll give you feedback before the next class.

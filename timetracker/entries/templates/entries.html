@@ -4,6 +4,12 @@
 
 {% block content %}
   <h2>Entries</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ entry_form.as_p }}
+    <input type="submit" name="name" value="Create Entry">
+  </form>
+
   <ul>
     {% for entry in entry_list %}
     <li>{{ entry.description }}</li>
