@@ -20,8 +20,8 @@ Check our RESOURCES.md for some links we think you'll find handy.
 - [X] Use the virtualenv you created in previous lesson
 - [X] Create forms to create new Projects and Clients (look at our EntryForm to see how to handle ForeignKey relationships)
 - [X] Add those forms to your views and templates so that users can create new Clients and Projects
-- [ ] Add some validation to make sure that start time is in the past
-- [ ] Validate that the end time is after the start time
+- [X] Add some validation to make sure that start time is in the past
+- [X] Validate that the end time is after the start time
 - [ ] Bonus Points #1: Think about making our form look a little nice with some CSS
 - [ ] Bonus Points #2: Add the ability to edit existing Projects and Clients
 

@@ -14,7 +14,7 @@ def clients(request):
             client.name = client_form.cleaned_data['name']
             client.save()
     else:
-        client_form = ClientForm(request.POST)
+        client_form = ClientForm()
 
     client_list = Client.objects.all()
     return render(request, 'clients.html', {
@@ -43,7 +43,7 @@ def entries(request):
             entry.description = entry_form.cleaned_data['description']
             entry.save()
     else:
-        entry_form = EntryForm(request.POST)
+        entry_form = EntryForm()
 
     entry_list = Entry.objects.all()
     return render(request, 'entries.html', {
@@ -60,7 +60,7 @@ def projects(request):
             project.client = project_form.cleaned_data['client']
             project.save()
     else:
-        project_form = ProjectForm(request.POST)
+        project_form = ProjectForm()
 
     project_list = Project.objects.all()
     return render(request, 'projects.html', {
